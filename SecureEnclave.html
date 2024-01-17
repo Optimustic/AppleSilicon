@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apple Silicon</title>
+<meta charset=”utf-8”>
+<form>
+    <input type='date' id='currentDate'/>
+  </form>
+  
+  <script>
+    document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);;
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<h2>Secure Enclave</h2>
+Secure Enclve는 Apple Silicon에 내장된 보안 전용 프로세서로, Apple 기기에 추가적인 보안 기능을 제공하는 역할을 한다.
+
+<div id="boxcontents3">
+    <h3>목적 및 사용</h3>
+    <p>
+        여타 보안 프로세서들과 비슷한 역할을 한다. 사용자 암호, Touch ID, Face ID의 데이터를 저장하는 역할을 한다. Secure Enclave에는 보안 전용 난수생성기가 있으며,
+        생체 데이터, 은행 인증서 등 민감한 개인정보가 포함된 데이터를 암호화하여 안전하게 보관한다.
+    </p>
+</div>
+<div id="boxcontents3">
+    <h3>특징 및 장점</h3>
+     우리가 전화할 때 필요한 'SIM'과 유사한 작동방식을 갖고 있다. 독립된 장치를 물리적으로 내장만 -우리나라에서 최근에 서비스를 시작한 'eSIM'을 생각하면 편할 것이다- 하고 있는 것이므로, 메인 프로세서가
+     사용자 암호를 Secure Enclave에 물어보면 Secure Enclave는 암호의 참과 거짓 여부만 판단해서 값을 반환한다. 이 덕분에 암호를 설정하면 일반 앱은 물론 운영체제 커널 심지어 애플 본사에서도 내부 정보를 
+     확인할 수 없다. FBI의 요구에도 열어주지 못하는 것이 이 이유때문이다. 
+</div>

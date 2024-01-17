@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apple Silicon</title>
+<meta charset=”utf-8”>
+<form>
+    <input type='date' id='currentDate'/>
+  </form>
+  
+  <script>
+    document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);;
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<h1><strong>Apple Silicon</strong></h1>  
+<div id="grid"> 
+<ol> 
+  <li><a href="index.html">About Apple silicon</a></li>
+  <li><a href="2. Aseries.html">A Series</a></li>
+  <li><a href="3. Mseries.html">M Series</a></li>
+  <li><a href="4. Sseries.html">S Series</a></li>
+  <li><a href="5. Wseries.html">W Series</a></li>
+  <li><a href="6. Hseries.html">H Series</a></li>
+  <li><a href="7. Tseries.html">T Series</a></li>
+  <li><a href="8. Useries.html">U Series</a></li>
+  <li><a href="9. R series.html">R Series</a></li>
+</ol>
+  <div id="apple">
+ 
+  <h2>Apple Silicon이란</h2>
+  <img src="Apple silicon.png" width="850">
+   <p style="margin-top: 25px;"> <b>Apple</b>에서 설계한 SoC(System On Chip) 및 SiP(System in Package)를 일컫는다.
+    이는 <a href= 'https://www.arm.com' target = "_blank" title= 'www.arm.com'><u><b>ARM사</b></u></a>의 <a href='https://www.arm.com/product-filter?families=cortex-a&showall=true' 
+    target="_blank" title="arm Cortex-A시리즈" ><u><b>Cortex-A시리즈</b></u></a> 소속의 CPU아키텍처를 사용하거나 <br>명령어셋 라이센스를 취득하여 자체적인 ARM호환 CPU아키텍처를 설계하여 사용하고 있다.
+    Apple Silicon의 가장 큰 특징은, 오직 Apple기기에만 탑재된다는 것이다. 
+    <p>
+      우선 CPU는 ARM 명령어셋을 사용하지만, 아키텍처는 자체 설계이다. 타사의 경우, ARM이 내놓은 명령어셋과 레퍼런스를 이용하여 칩을 제작하고 커스텀을 한다. 이 점 때문에 실질적으로 ARM과 Apple Silicon은 별개로 취급해야하는 것이다. 
+      또한 GPU의 다이 사이즈가 유독 타사의 AP보다 크다는 것이다. 이는 Apple이 모바일 AP를 오로지 자사 기기에 탑재할 목적으로 개발하여 규격에 대한 부담이 상대적으로 적고, 동시에 소프트웨어 관리 능력도 경쟁사 대비 상위급이기에 가능한 것이다. 
+      <br>그러므로 모바일 AP에서 CPU아키텍처가 차지하는 부분을 최소화하고 이를 GPU의 다이 사이즈에 할당하는 것이다. 이 덕분에 벤치마크 프로그램상 그래픽 성능으로는 모바일 AP 중 최상급의 성능을 보여준다. 
+    </p>
+    <p>
+      Apple은 자체적인 반도체 생산을 하지 않는 <a href='https://namu.wiki/w/팹리스' title='팹리스-나무위키' target="_blank"><u><b>팹리스</b></u></a> 업체이기 때문에 <a href='https://namu.wiki/w/파운드리' title='파운드리- 나무위키'
+      target="_blank" ><u><b>파운드리</b></u></a>업체에 위탁생산을 맡긴다. A시리즈가 iPhone 4에 탑재되기 이전에 삼성LSI가 생산을 해왔고, Apple A시리즈 설계에도 관여한 부분이 있는 것으로 알려졌다. 
+    </p>
+    <p>
+       하지만 삼성전자의 무선사업부(현재는 'MX사업부')가 안드로이드 진영에서 Apple이상으로 시장에서 영향력이 큰 제조사가 되면서 마음놓고 위탁을 할 수 없게 되어버렸다. 그래서 Apple은 보안 등의 이유로 이른바 
+       '탈 삼성 전략'을 추진하기 시작했다. 그러나 모바일 AP의 경우에는 가장 최신 공정에서, 그것도 엄청난 물량을 요구하는 Apple의 주문을 받을 회사가 그리 마땅치 않았기에 '탈 삼성 전략'이 최고조에 올랐던 iPhone 5s도 결국 삼성LSI에서 생산되었다.
+    </p>
+    <p>
+      그래도 지속적으로 TSMC에 지속적으로 투자하는 등 '탈 삼성 전략'을 지속적으로 준비해왔고, 삼성LSI의 내부 사정까지 겹쳐 A8칩셋은 TSMC의 20nm SOC공정에서 생산되었다. 하지만 A9칩셋은 삼성LSI와 TSMC 동시에 생산하기도 했다. 결국 Apple이 
+      삼성에게 향후 신제품 라인업에 대한 계획 유출을 꺼림에 따라, 2015년 Apple A9X를 기점으로 완전히 TSMC로 돌아서게 되어, 현재까지 Apple Silicon은 전량 TSMC가 생산하고 있다.
+    </p>
+    
+    <p>
+      <h3>아래는 Apple Silicon의 시리즈 목록이다.(클릭하여 바로 이동.)</h3>
+      <li><a href="2. Aseries.html" title="A series 바로가기"><u><b>A series</b></u></a></li>
+      <li><a href="3. Mseries.html" title="M series 바로가기"><u><b>M series</b></u></a></li>
+      <li><a href="4. Sseries.html" title="S series 바로가기"><u><b>S series</b></u></a></li>
+      <li><a href="5. Wseries.html" title="W series 바로가기"><u><b>W series</b></u></a></li>
+      <li><a href="6. Hseries.html" title="H series 바로가기"><u><b>H series</b></u></a></li>
+      <li><a href="7. Tseries.html" title="T series 바로가기"><u><b>T series</b></u></a></li>
+      <li><a href="8. Useries.html" title="U series 바로가기"><u><b>U series</b></u></a></li>
+      <li><a href="9. R series.html"title="R series 바로가기"><u><b>R series</b></u></a></li>
+    </p>
+
+
+ 
+
+
+
+
+
+
+  </div>
+</body>
+</html>
