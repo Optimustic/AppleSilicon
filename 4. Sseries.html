@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apple Silicon</title>
+<meta charset=”utf-8”>
+<form>
+    <input type='date' id='currentDate'/>
+  </form>
+  
+  <script>
+    document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);;
+
+  </script>
+<link rel="stylesheet" href="style.css">  
+</head>
+<body> 
+<h1><strong>Apple Silicon</strong></h1> 
+<div id="grid"> 
+    <ol>
+        <li><a href="index.html">About Apple silicon</a></li>
+        <li><a href="2. Aseries.html">A Series</a></li>
+        <li><a href="3. Mseries.html">M Series</a></li>
+        <li><a href="4. Sseries.html">S Series</a></li>
+        <li><a href="5. Wseries.html">W Series</a></li>
+        <li><a href="6. Hseries.html">H Series</a></li>
+        <li><a href="7. Tseries.html">T Series</a></li>
+        <li><a href="8. Useries.html">U Series</a></li>
+        <li><a href="9. R series.html">R Series</a></li>
+      </ol>
+<div id="apple">
+  <div id="seriesname">
+    <h2>Apple S series</h2>
+    </div>
+    <div id="boxcontents">
+    Apple Watch에 들어가는 Apple Silicon시리즈의 웨어러블용 라인업이다.
+    </div>
+    <div id="modelname">
+      <h3><u>Apple S1</u></h3>
+      </div>
+    <img src="S1.jpg" width="300">
+    <div id="boxcontents2">
+      <b>CPU</b>: ARM Cortex-A7 1코어 520MHZ
+      <br><b>GPU</b>: IT PowerVR SGX543 1코어 ?MHz
+      <br><b>메모리</b>: 32bit 싱글채널 LPDDR3 ?MHz 512MB
+      <br><b>생산공정</b>: 삼성 S>LSI 28nm HKMG (다이사이즈: 32mm^2)
+      <br><b>주요 사용기기</b>: Apple Watch(1세대)
+    </div>
+    Apple S 시리즈의 최초 제품이다. 다른 Apple Silicon과는 달리 SoC(단일 실리콘 칩 위에서 여러 기능을 구현)가 아닌 <b>SiP(이종 실리콘으로 만들어진 칩을 한 패키지 안에 구성)</b>이다. Apple Watch에 들어가는 많은 부품들을 하나의 패키지로 통합하기 위함이다. 프로세서, RAM, 낸드 플래시, NFC, 터치 컨트롤러, 통신 모듈 등 배터리를 제외한 모든 것이 이 칩 하나에 집약되어 있다.
+    
+    <div id="modelname">
+      <h3><u>Apple S1P</u></h3>
+      </div>
+    <img src="S1p.jpg" width="300">
+    <div id="boxcontents2">
+      <b>CPU</b>: ARM Cortex-A7 2코어 520MHZ
+      <br><b>GPU</b>: IT PowerVR Series 6 'Rogue' ?MHz
+      <br><b>메모리</b>: LPDDR3 512MB
+      <br><b>생산공정</b>: -
+      <br><b>주요 사용기기</b>: Apple Watch Series 1
+    </div>
+    기존의 Apple Watch가 Apple Watch Series 2의 출시와 함께 'Apple Watch Series 1'으로 리네이밍되며 듀얼코어로 바뀌었고, 이에 명칭도 Apple S1P로 변경되었다. 같은 듀얼코어이지만, 'Apple S2'가 아닌 이유는 GPS모듈이 없기 때문이라고 추정된다.
+
+    <div id="modelname">
+      <h3><u>Apple S2</u></h3>
+      </div>
+    <img src="S2.jpg" width="300">
+    <div id="boxcontents2">
+      <b>CPU</b>: ARM Cortex-A7 2코어 520MHZ
+      <br><b>GPU</b>: IT PowerVR Series 6 'Rogue' ?MHz
+      <br><b>메모리</b>: LPDDR4 512MB
+      <br><b>생산공정</b>: -
+      <br><b>주요 사용기기</b>: Apple Watch Series 2
+    </div>
+    Apple Watch Series 2에서 처음 사용된 SIP이다. 같은 2세대 모델이지만 Apple Watch Series 1에는 이 칩이 아닌 Apple S1P가 탑재되었다. 듀얼 코어이며 GPU 성능이 업그레이드되었다고 하나, 확실한 스펙은 밝혀지지 않았다. Apple 측의 주장으로는 CPU는 1.5배, GPU는 2배가량 더 빨라졌다고 한다.
+
+    <div id="modelname">
+      <h3><u>Apple S3</u></h3>
+      </div>
+    <img src="S3.jpg" width="300">
+    <div id="boxcontents2">
+      <b>CPU</b>: ARMv7k 호환 아키텍처 2코어 ?MHz
+      <br><b>GPU</b>: -
+      <br><b>메모리</b>: LPDDR4 SDRAM 512MB
+      <br><b>생산공정</b>: -
+      <br><b>주요 사용기기</b>: Apple Watch Series 3
+    </div>
+    Apple Watch Series 3에 사용된 SiP이다. Apple에 따르면 70%의 성능 향상과 50%의 전력 효율 향상이 있었다고 한다.
+
+    <div id="modelname">
+      <h3><u>Apple S4</u></h3>
+      </div>
+    <img src="S4.jpg" width="300">
+    <div id="boxcontents2">
+      <b>CPU</b>: Apple Tempest 2코어 ?MHz
+      <br><b>GPU</b>: Apple G11M
+      <br><b>NPU</b>: -
+      <br><b>메모리</b>: LPDDR4X SDRAM 1GB
+      <br><b>생산공정</b>: TSMC 10nm
+      <br><b>주요 사용기기</b>: Apple Watch Series 4
+    </div>
+    Apple Watch Series 4에 사용된 SiP이다. Apple Watch에 최초로 탑재된 64비트 CPU로, Apple A12 Bionic의 리틀 코어인 'Tempest'를 듀얼 코어로 구성되어 있다. GPU는 Apple A12 Bionic과 비슷하게 Apple에서 자체 디자인한 'Apple G11M'을 탑재하였다. 또한 Neural Engine도 탑재되어 watchOS 6부터는 'Core ML'을 지원한다. Apple에 따르면 Apple S3에 비해 최대 2배 빨라졌다고 한다. 테스트 결과 iPhone 6s 이상의 기기에서만 구동할만한 프로세싱 파워를 보여주었다고 한다.
+
+    <div id="modelname">
+      <h3><u>Apple S5</u></h3>
+      </div>
+    <img src="S5.jpg" width="300">
+    <div id="boxcontents2">
+      <b>CPU</b>: Apple Tempest 2코어 ?MHz
+      <br><b>GPU</b>: Apple G11M
+      <br><b>NPU</b>: -
+      <br><b>메모리</b>: LPDDR4X SDRAM 1GB
+      <br><b>생산공정</b>: TSMC 10nm
+      <br><b>주요 사용기기</b>: [파트넘버 TMJA65]: Apple Watch Series 5, Apple Watch SE <br>[파트넘버 APL1W82]: HomePod mini
+    </div>
+    Apple Watch Series 5와 함께 발표된 SiP이다. Apple S4와 비교했을 때 CPU와 GPU는 동결되어 성능은 같다. 다만 AOD 기능을 위한 저전력 디스플레이 컨트롤러 및 내장 나침반이 추가되었다.
+
+    <div id="modelname">
+      <h3><u>Apple S6</u></h3>
+      </div>
+    <img src="S6.jpg" width="300">
+    <div id="boxcontents2">
+      <b>CPU</b>: Apple Thunder 2코어 1.8GHz
+      <br><b>GPU</b>: -
+      <br><b>NPU</b>: -
+      <br><b>메모리</b>: LPDDR4X SDRAM 2GB
+      <br><b>생산공정</b>: TSMC 7nm
+      <br><b>주요 사용기기</b>: Apple Watch Series 6
+    </div>
+    Apple Watch Series 6와 함께 발표된 SiP이다. Apple S5와 비교했을 때 최대 20% 빨라졌다고 소개하고 있다. Apple S4와 유사하게 Apple A13 Bionic의 저전력 코어인 'Thunder'를 듀얼 코어로 구성되어 있다. 또한 Apple S4와 Apple S5처럼 Apple W3 무선 통신 칩을 내장했고 새로운 Apple U1 초광대역 칩과 상시감지형 고도계가 추가된 것으로 보인다. 더하여 Wi-Fi 5를 지원한다.
+
+
+    <div id="modelname">
+      <h3><u>Apple S7</u></h3>
+      </div>
+    <img src="S7.jpg" width="300">
+    <div id="boxcontents2">
+      <b>CPU</b>: Apple Thunder 2코어 1.8GHz
+      <br><b>GPU</b>: -
+      <br><b>NPU</b>: -
+      <br><b>메모리</b>: LPDDR4X SDRAM 2GB
+      <br><b>생산공정</b>: TSMC 7nm
+      <br><b>주요 사용기기</b>: [파트넘버 ?]: Apple Watch Series 7, [파트넘버 APL1W86]: HomePod(Gen2)
+    </div>
+    Apple Watch Series 7과 함께 발표된 SiP이다. 전작인 S6와 똑같은 CPU, 클럭을 적용하여 CPU 성능은 동결되었다.
+
+    <div id="modelname">
+      <h3><u>Apple S8</u></h3>
+      </div>
+    <img src="S8.jpg" width="300">
+    <div id="boxcontents2">
+      <b>CPU</b>: Apple Thunder 2코어 1.8GHz
+      <br><b>GPU</b>: -
+      <br><b>NPU</b>: -
+      <br><b>메모리</b>: -
+      <br><b>생산공정</b>: TSMC 7nm
+      <br><b>주요 사용기기</b>: Apple Watch Series 8, Apple Watch SE(Gen_2), Apple Watch Ultra
+    </div>
+    Apple Watch Series 8, Apple Watch SE(Gen_2), Apple Watch Ultra에 사용된 SiP이다. Apple S6부터 이어서 CPU가 또 동결되면서 전작과 CPU성능 차이는 없다.
+       
+    <div id="modelname">
+      <h3><u>Apple S9</u></h3>
+      </div>
+    <img src="S9.jpg" width="300">
+    <div id="boxcontents2">
+      <b>CPU</b>: Apple Blizzard 2코어 ?GHz<br>(Blizzard: 64KB L1 share Cache + 4MB L2 share Cache)
+      <br><b>GPU</b>: -
+      <br><b>NPU</b>: 4코어 ?세대 Apple Neural Engine ?TOPS
+      <br><b>메모리</b>: ?GB LPDDR? ?MHz
+      <br><b>생산공정</b>: TSMC 5nm
+      <br><b>주요 사용기기</b>: Apple Watch Series 9, Apple Watch Ultra 2
+    </div>
+    Apple Watch Series 9, Apple Watch Ultra 2에 사용된 SiP이다.
+
+  <p>CPU는 A15 Bionic의 효율 코어인 Blizzard를 채용했다. 트랜지스터 개수는 총 56억 개로, 이는 전작에 비해 60% 더 많은 것이다.</p>
+
+  <p>GPU는 전작과 비교하여 최대 30% 빨라졌다.</p>
+
+  <p>NPU는 새로운 4코어 아키텍처가 적용되었으며 전작에 비해 머신 러닝 처리 속도가 최대 2배 빨라졌다. 이 덕분에 더블 탭과 같은 기능을 구현하며, Siri 받아쓰기의 정확도가 25% 개선되었다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</body>
+</html>

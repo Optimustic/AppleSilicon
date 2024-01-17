@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apple Silicon</title>
+<meta charset=”utf-8”>
+<form>
+  <input type='date' id='currentDate'/>
+</form>
+
+<script>
+  document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);;
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<h1><strong>Apple Silicon</strong></h1>   
+<div id="grid">
+  <ol>
+    <li><a href="index.html">About Apple silicon</a></li>
+    <li><a href="2. Aseries.html">A Series</a></li>
+    <li><a href="3. Mseries.html">M Series</a></li>
+    <li><a href="4. Sseries.html">S Series</a></li>
+    <li><a href="5. Wseries.html">W Series</a></li>
+    <li><a href="6. Hseries.html">H Series</a></li>
+    <li><a href="7. Tseries.html">T Series</a></li>
+    <li><a href="8. Useries.html">U Series</a></li>
+    <li><a href="9. R series.html">R Series</a></li>
+  </ol>
+<div id="apple">
+  <div id="seriesname">
+  <h2>Apple M series</h2>
+</div>
+  <div id="boxcontents">
+  <a href= 'https://www.youtube.com/live/5AwdkGKmZ0I?si=6dg6Zaomte4_JqRM' target="_blank" title="Apple 이벤트 - 11월 10일"><u>Apple이 2020년 11월 10일에 진행한 애플이벤트</u></a>에서 처음 공개하였다. 공개 당시 MacBook Air(2020)과 MacBook Pro 13(2020)에 탑재되어 출시되었다. <br>그러다 점차 iPad에도 적용하여 탑재한 제품군을 늘려가고 있다. 기존 Apple A시리즈의 강화판인 
+  A(넘버링)X 시리즈의 연장선상에 있다고 보면 된다.
+  </div>
+  <div id="modelname">
+    <h3><u>Apple M1</u></h3>
+    </div>
+  <img src="M1.jpg" width="500">
+  <div id="boxcontents2">
+    <b>CPU</b>: Apple Firestorm 4코어 0.6 ~ 3.2GHz + Apple Icestorm 4코어 0.6 ~ 2.06GHz 
+    <br>(Firestorm: 192KB L1 Order Cache + 128KB L1 data Cache / 12MB L2 share Cache, 
+  <br>Icestorm: 128KB L1 Order Cache + 64KB L1 data Cache / 4MB L2 share Cache / 8MB system Cache)
+    <br><b>GPU</b>: Apple G13G 1,278MHz <b>[7코어 / 8코어 옵션]</b>
+    <br><b>NPU</b>: 16코어 4세대 Apple Neural Engine 11TOPS
+    <br><b>메모리</b>: 64bit 2채널(=128bit) LPDDR4X_2, 133MHz 통합 메모리(메모리 대역폭: 68.2GB/s) <b>[8GB / 16GB 옵션]</b>
+    <br><b>명령어셋</b>: ARMv8.5-A
+    <br><b>생산공정</b>: TSMC 5nm FinFET(EUV) (다이사이즈: 118.91mm^2 / 트랜지스터 개수: 160억)
+    <br><b>주요 사용기기</b>: MacBook Air(2020), MacBook Pro 13(2020), Mac mini(2020), iMac 24(2021), iPad Pro(11형 Gen_3), iPad Pro(12.9형 Gen_5),iPad Air(Gen_5)
+  </div>
+  Apple이 <a href= 'https://www.youtube.com/live/5AwdkGKmZ0I?si=6dg6Zaomte4_JqRM' target="_blank" title="Apple 이벤트 - 11월 10일"><u>Apple이 2020년 11월 10일에 진행한 애플이벤트</u></a>에서 발표한 Apple M 시리즈의 첫 작품이며, Apple Silicon 기반 Mac에 처음으로 탑재되었다. 이후 2021년 4월 이벤트를 통해 iPad Pro(11형 Gen_3)와 iPad Pro(12.9형 Gen_5)에도 동일한 칩을 사용하며, 2022년 3월 이벤트에서는 iPad Air(Gen_5)에도 이를 탑재하였다. 
+<p>
+CPU는 ARM big.LITTLE 기술을 채용하여 4코어 Apple Firestorm을 빅 클러스터로, 4코어 Apple Icestorm을 리틀 클러스터로 총 8코어 CPU의 구성을 이룬다. Apple은 13형 MacBook Pro에 들어가던 Intel CPU 대비 Apple M1이 2.8배의 CPU 성능을 가지며, x86 CPU와 비교 시 3배의 전력 효율을 가진다고 밝혔다. Apple Firestorm은 8-Wide 디코더 구조를 가지는데, 이는 CPU 역사상 가장 넓은 아키텍처에 속한다. 
+</p>
+GPU는 Apple G13G를 8코어 구성으로 탑재했다. 이를 통하여 '섀도 오브 더 툼 레이더'를 구동 시 이전 세대 MacBook Air와 비교하여 3.1배 더 빠른 게임 성능을 낼 수 있다고 한다. MacBook Air 기본형에는 7코어 구성으로 탑재된다. 128개의 실행 유닛(Execution Units)을 가지며, 2.6 TFlops의 FP32 연산 성능, 82 GTex/s의 텍스처 성능과 41 GPix/s의 ROP 성능을 가지며, 경쟁사 GPU와 비교 시 2배의 전력 효율을 가진다고 밝혔는데, 이는 데스크탑용 GPU인 GTX 1050Ti와 GTX 1650 사이 급에 해당하는 연산 성능 / TMU / ROP 성능을 보유한 셈이다. 
+<p>
+  NPU는 A14 Bionic에 탑재된 4세대 Neural Engine을 16코어 구성으로 탑재했다. 동일하게 11 TOPS의 성능을 가진다고 한다.
+</p>
+<p>
+  RAM은 SoC 패키지 안에 통합되어 있으며, LPDDR4X 규격으로 8 GB와 16 GB를 제공한다. Apple에선 이를 '통합 메모리'라 부르며, CPU 다이 바로 옆에 메모리가 위치하여 레이턴시가 극단적으로 짧은데, 이는 M1이 높은 성능 경쟁력을 가지는 비결 중 하나로 꼽힌다. 이 때문에 RAM 확장이 어렵다고 볼 수도 있지만 LPDDR은 원래 일체형밖에 없으므로 별 문제가 되지 않는다. 실제로 LPDDR을 탑재한 노트북들은 모두 일체형 RAM을 쓴다.[3] 통합 메모리는 기존 RAM과 GPU의 VRAM을 통합한 방식이기 때문에 RAM 전체를 CPU와 GPU가 나눠 쓴다.[4] 대신 일반 RAM보다 성능이 더 좋다.
+</p>
+<p>
+  ARM기반이며 iOS, iPadOS용 앱들을 위한 API를 macOS에 통합했기에 별도의 에뮬레이터 없이도 돌릴 수 있다. 단, 기술적인 걸림돌은 사라졌으나 앱 개발자가 macOS에서도 사용할 수 있게 허가를 하지 않으면 다운로드가 불가능하다. 하지만 'Rosetta 2'를 통해 실시간 컴파일번역을 가능케하도록 해두어 기존 Intel기반 프로그램들도 큰 지장이 없이 돌아갈 수 있도록 하였다.
+</p>
+최대 2대의 디스플레이를 지원한다.
+
+
+
+
+
+  <div id="modelname">
+    <h3><u>Apple M1 Pro</u></h3>
+    </div>
+  <img src="M1Pro.jpg" width="500">
+  <div id="boxcontents2">
+    <b>CPU</b>: Apple Firestorm 4코어 0.6 ~ 3.23GHz + Apple Icestorm 4코어 0.6 ~ 2.06GHz
+    <br>(Firestorm: 192KB L1 Order Cache + 128KB L1 data Cache / 24MB L2 share Cache, 
+  <br>Icestorm: 128KB L1 Order Cache + 64KB L1 data Cache / 4MB L2 share Cache / 24MB system Cache) <b>[6+2코어 / 8+2코어 옵션]</b>
+    <br><b>GPU</b>: Apple G13X 1,296MHz <b>[14코어 / 16코어 옵션]</b>
+    <br><b>NPU</b>: 16코어 4세대 Apple Neural Engine 11TOPS
+    <br><b>메모리</b>: 128bit 2채널(=256bit) LPDDR5 3,200MHz 통합 메모리(메모리 대역폭: 204.8GB/s) <b>[16GB / 32GB 옵션]</b>
+    <br><b>내장 엔진</b>: 하드웨어 가속형 H.264 / HEVC / ProRes / ProRes RAW 동영상 인코딩 및 디코딩 엔진, ProRes 인코딩 및 디코딩 엔진, 디스플레이 엔진
+    <br><b>명령어셋</b>: ARMv8.5-A
+    <br><b>생산공정</b>: TSMC 5nm FinFET(EUV) (다이사이즈: 245mm^2 / 트랜지스터 개수: 337억)
+    <br><b>주요 사용기기</b>: MacBook Pro 14(2021), MacBook Pro 16(2021)
+  </div>
+2021년 10월 Apple이벤트에서 공개되었다. 
+<p>
+  CPU는 ARM big.LITTLE 기술을 채용하고, M1과 동일한 아키텍처의 8코어 Apple Firestorm을 빅 클러스터로, 2코어 Apple Icestorm을 리틀 클러스터로 하여 총 10코어 CPU의 구성을 이룬다. 단, 14형 MacBook Pro 기본형은 8코어 제품이 사용된다.
+
+</p>
+<p>
+  GPU는 Apple G13X를 16코어 구성으로 탑재했다. 단, 14형 MacBook Pro 기본형은 염가판으로 코어가 2개 죽은 14코어 제품이 사용된다.
+<br>
+  NPU는 4세대 Neural Engine을 16코어 구성으로 탑재했다. 전작인 M1과 동일한 성능을 가진다.
+  <br>
+  RAM은 전작과 동일한 개념의 통합 메모리로 구성되어 있으며, LPDDR5 규격으로 16 GB와 32 GB를 제공한다. 메모리 대역폭은 204.8 GB/s이다.
+</p>
+<p>
+  CPU 성능은 성능코어 2개가 죽은 8코어 버전의 경우 Cinebench R23 기준 싱글코어 1,562점, 멀티코어 12,340점이 나오며 GeekBench 5 기준 싱글코어 1,768점, 멀티코어 9,731점 가량이 나온다.
+  성능코어가 죽지 않은 10코어 풀칩의 경우, 멀티코어가 GeekBench 기준 11,680점, Cinebench R23 기준 14,970점이며 100W를 넘어가는 데스크탑용 프로세서라는 사실을 고려하면 깡성능 이전에 전성비가 높은 편이다.
+  
+</p>
+최대 3대의 디스플레이를 지원한다.
+
+
+
+
+  <div id="modelname">
+    <h3><u>Apple M1 Max</u></h3>
+    </div>
+  <img src="M1Max.jpg" width="500">
+  <div id="boxcontents2">
+    <b>CPU</b>: Apple Firestorm 8코어 0.6 ~ 3.23GHz + Apple Icestorm 2코어 0.6 ~ 2.06GHz 
+    <br>(Firestorm: 192KB L1 Order Cache + 128KB L1 data Cache / 24MB L2 share Cache, 
+  <br>Icestorm: 128KB L1 Order Cache + 64KB L1 data Cache / 4MB L2 share Cache / 48MB system Cache) 
+    <br><b>GPU</b>: Apple G13X 1,296MHz <b>[24코어 / 32코어 옵션]</b>
+    <br><b>NPU</b>: 16코어 4세대 Apple Neural Engine 11TOPS
+    <br><b>메모리</b>: 128bit 4채널(=512bit) LPDDR5 3,200MHz 통합 메모리(메모리 대역폭: 409.6GB/s) <b>[32GB / 64GB 옵션]</b>
+    <br><b>내장 엔진</b>: 하드웨어 가속형 H.264 / HEVC / ProRes / ProRes RAW 동영상 인코딩 및 디코딩 엔진 2개, ProRes 인코딩 및 디코딩 엔진 2개, 디스플레이 엔진
+    <br><b>명령어셋</b>: ARMv8.5-A
+    <br><b>생산공정</b>: TSMC 5nm FinFET(EUV) (다이사이즈: 432mm^2 / 트랜지스터 개수: 570억)
+    <br><b>주요 사용기기</b>: MacBook Pro 14(2021), MacBook Pro 16(2021), Mac Studio(2022)
+  </div>
+  2021년 10월 Apple이벤트에서 공개되었다. 
+  <p>
+    CPU는 ARM big.LITTLE 기술을 채용하고, M1과 동일한 아키텍처의 8코어 Apple Firestorm을 빅 클러스터로, 2코어 Apple Icestorm을 리틀 클러스터로 하여 총 10코어 CPU의 구성을 이룬다. Apple M1 대비 싱글코어 성능은 동일하지만, 멀티코어 성능은 약 67% 향상되었다.
+
+  </p>
+
+<p>
+  GPU는 Apple G13X를 32코어 구성으로 탑재했다. 염가판으로 24코어 구성도 존재한다.
+
+  <br>NPU는 4세대 Neural Engine을 16코어 구성으로 탑재했다. 전작인 M1과 동일한 성능을 가진다.
+  
+  <br>RAM은 전작과 동일한 개념의 통합 메모리로 구성되어 있으며, LPDDR5 규격으로 32 GB와 64 GB를 제공한다. 메모리 대역폭은 409.6 GB/s이다.
+</p>  
+<p>
+  CPU 성능은 벤치 테스트 중 하나인 Geekbench 5 기준 싱글코어 1,745점, 멀티코어 12,422점으로 Intel의 2년 전 일반 데스크탑 최상급 모델인 Intel Core i9-11900K과 비교 시, M1 Max가 싱글코어에서는 약 5% 낮지만 멀티코어에서는 약 10% 더 높다. 다만 벤치마크에 따라 최대 20% 정도 차이가 있다. ARM기반 프로세서로서 1년 만에 이뤄진 발전이란 것을 고려하면 괄목할 수준이다.
+
+  VRAM의 경우, 64 GB 통합 메모리 기준 최대 40 GB까지 할당해서 사용하는 것으로 밝혀졌다.
+  
+</p>
+
+최대 5대의 디스플레이를 지원한다.
+
+
+
+  <div id="modelname">
+    <h3><u>Apple M1 Ultra</u></h3>
+    </div>
+  <img src="M1Ultra.jpg" width="500">
+  <div id="boxcontents2">
+    <b>CPU</b>: Apple Firestorm 16코어 0.6 ~ 3.23GHz + Apple Icestorm 4코어 0.6 ~ 2.06GHz 
+    <br>(Firestorm: 192KB L1 Order Cache + 128KB L1 data Cache / 48MB L2 share Cache, 
+  <br>Icestorm: 128KB L1 Order Cache + 64KB L1 data Cache / 8MB L2 share Cache / 96MB system Cache) 
+    <br><b>GPU</b>: Apple G13X 1,296MHz <b>[48코어 / 64코어 옵션]</b>
+    <br><b>NPU</b>: 32코어 4세대 Apple Neural Engine 22TOPS
+    <br><b>메모리</b>: 128bit 8채널(=1,024bit) LPDDR5 3,200MHz 통합 메모리(메모리 대역폭: 819.2GB/s) <b>[64GB / 128GB 옵션]</b>
+    <br><b>내장 엔진</b>: 하드웨어 가속형 H.264 / HEVC / ProRes / ProRes RAW 동영상 인코딩엔진 2개 및 디코딩엔진 4개, ProRes 인코딩 및 디코딩 엔진 4개, 디스플레이 엔진
+    <br><b>명령어셋</b>: ARMv8.5-A
+    <br><b>생산공정</b>: TSMC 5nm FinFET(EUV) (다이사이즈: 864mm^2 / 트랜지스터 개수: 1,140억)
+    <br><b>주요 사용기기</b>: Mac Studio(2022)
+  </div>
+<p>
+Apple M1 Max 두개를 'Ultra Fusion'라는 이름의 아키텍처로 하나로 연결하여 하나의 칩으로 구성하였다. 따라서 M1 Pro, M1 Max와 CPU, GPU, NPU 아키텍처는 모두 동일하다. 소프트웨어도 이를 칩 한 개로 인식하는데, 덕분에 기존의 멀티 프로세서 구조와는 다르게 앱의 코드를 다시 짜지 않아도 된다. Apple의 발표에 따르면 현존하는 어떤 기술보다 연결 밀도가 두 배 높으면서도 극히 적은 전력을 사용한다. 위의 사양표에서 보다시피, Apple M1 Max의 개수의 정확히 두배이다.
+</p>
+<div id="videotitle"> Ultra Fusion 아키텍처</div>
+<video width="900" height="600" controls>
+    <source src="UltraFusion.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <br><b>[UltraFusion은 10,000개 이상의 신호가 발생하는 다이를 연결하는 실리콘 인터포저를 사용하여 2.5TB/s 이상의 저지연성 프로세서 간 대역폭을 제공한다. 
+  UltraFusion의 아키텍처는 M1 Ultra가 소프트웨어에 단일 칩으로 인식되도록 한다.]</b>
+
+    <p>
+      CPU는 ARM big.LITTLE 기술을 채용하고, M1과 동일한 아키텍처의 16코어 Apple Firestorm을 빅 클러스터로, 4코어 Apple Icestorm을 리틀 클러스터로 하여 총 20코어 CPU의 구성을 이룬다. Apple에 따르면,
+      Intel i9-12900K와 비교하였을 때 CPU는 100W 더 적은 전력량으로 i9의 최대 성능을 내고, 같은 전력에서 90% 더 높은 성능을 낸다고 한다. 
+    </p>
+    <p>
+      GPU는 Apple G13X를 64코어 구성으로 탑재했다. 단, Mac Studio 기본형은 염가판으로 48코어 구성이 탑재된다. Apple의 발표에 따르면 NVIDIA GeForce RTX 3090과 비교했을 때, M1 Ultra의 GPU는 RTX 3090보다 더 높은 성능을 내면서도 전력은 200 W 더 적게 소모한다고 주장한다.
+
+      <p>NPU 또한 전작과 동일한 4세대 Apple Neural Engine이 탑재되었으나, 코어 개수가 두 배 증가한 32코어 구성으로 탑재되었다. 덕분에 성능도 22 TOPS로 두 배 상승하였다.</p>
+    </p>
+
+    <p>
+      VRAM의 경우 128GB 통합 메모리 구성 기준 최대 98GB까지 할당한다.
+    </p>
+최대 5대의 디스플레이를 지원한다.
+
+<div id="modelname">
+  <h3><u>Apple M2</u></h3>
+  </div>
+<img src="M2.jpg" width="500">
+<div id="boxcontents2">
+  <b>CPU</b>: Apple Avalanche 4코어 3.49GHz + Apple Blizzard 4코어 2.42GHz 
+  <br>(Avalanche: 192KB L1 Order Cache + 128KB L1 data Cache / 16MB L2 share Cache, 
+<br>Blizzard: 128KB L1 Order Cache + 64KB L1 data Cache / 4MB L2 share Cache / 8MB system Cache) 
+  <br><b>GPU</b>: 5세대 자체 디자인 아키텍처 1,398MHz<b> [8코어 / 10코어 옵션]</b>
+  <br><b>NPU</b>: 16코어 5세대 Apple Neural Engine 15.8TOPS
+  <br><b>메모리</b>: 64bit 2채널(=128bit) LPDDR5 3,200MHz 통합 메모리(메모리 대역폭: 102.4GB/s) <b>[8GB / 16GB / 24GB 옵션]</b>
+  <br><b>내장 엔진</b>: 하드웨어 가속형 H.264 / HEVC / ProRes / ProRes RAW 동영상 인코딩 및 디코딩엔진, ProRes 인코딩 및 디코딩 엔진 
+  <br><b>명령어셋</b>: ARMv8.6-A
+  <br><b>생산공정</b>: TSMC 5nm FinFET P(EUV) (다이사이즈: 141.7mm^2 / 트랜지스터 개수: 200억)
+  <br><b>주요 사용기기</b>: MacBook Air(2022), MacBook Air 15(2023), MacBook Pro 13(2022), iPad Pro(11형 Gen_4), iPad Pro(12.9형 Gen_6), Mac mini(2023), Apple Vision Pro
+</div>
+Apple M1의 후속작으로, <a href="https://www.youtube.com/live/q5D55G7Ejs8?si=skaLajqXyQY5gQDS&t=3345" target="_blank" title="WWDC 2022 - 6월 7일"><u>
+2023년 6월 7일에 진행한 WWDC22</u></a>에서 공개되었다. 공개와 동시에 MacBook Air(2022)와 MacBook Pro 13(2022)에 탑재되어 출시되었다. 
+<p>
+  CPU는 ARM big.LITTLE 기술을 채용하고, A15 Bionic에서 채용된 4코어 Apple Avalanche를 빅 클러스터로, 4코어 Apple Blizzard을 리틀 클러스터로 하여 총 8코어 CPU의 구성을 이룬다. Apple은 싱글코어 성능 향상폭을 공개하지 않았으나, 멀티코어 성능은 전작인 M1 대비 약 18% 향상되었다고 한다. Geekbench 5 기준 싱글코어는 10%, 멀티코어는 19% 향상된 것이 확인되었다. 발표 당시 갤럭시 북2 360에 탑재된 15W급 Intel i7-1255U 프로세서와 비교하였었다. M2의 CPU 멀티코어 성능은 i7-1255U보다 최대 20% 높고 같은 전력 소모량에서는 1.9배 더 높은 성능을 낸다. 
+</p>
+<p>
+  GPU는 자체 디자인 5세대 아키텍처를 10코어 구성으로 탑재했다. 단, MacBook Air(2022)는 8코어 구성으로 시작한다. Apple의 발표에 따르면 10코어 GPU 기준으로 전작인 M1 대비 성능이 35% 향상되었으며, GFX 벤치마크 기준 M1 대비 42% ~ 45% 향상되었다.
+</p>
+<p>
+  NPU는 A15 Bionic의 5세대 Apple Neural Engine을 동일하게 16코어 구성으로 탑재했다. 성능은 15.8 TOPS로 전작인 M1 대비 43.6% 향상되었다.
+</p>
+<p>
+  이외에 ISP와 ProRes 인코딩/디코딩 엔진을 포함한 미디어 엔진 등의 부가 요소를 탑재했으며, PCIe 4.0, Thunderbolt 3 등의 I/O 규격을 지원한다.
+</p>
+
+<div id="modelname">
+  <h3><u>Apple M2 Pro</u></h3>
+  </div>
+<img src="M2Pro.jpg" width="500">
+<div id="boxcontents2">
+  <b>CPU</b>: Apple Avalanche 4코어 3.504GHz + Apple Blizzard 4코어 2.42GHz 
+  <br>(Avalanche: 192KB L1 Order Cache + 128KB L1 data Cache / 32MB L2 share Cache, 
+<br>Blizzard: 128KB L1 Order Cache + 64KB L1 data Cache / 4MB L2 share Cache / 24MB system Cache) 
+  <br><b>GPU</b>: 5세대 자체 디자인 아키텍처 1,398MHz<b> [16코어 / 19코어 옵션]</b>
+  <br><b>NPU</b>: 16코어 5세대 Apple Neural Engine 15.8TOPS
+  <br><b>메모리</b>: 64bit 4채널(=256bit) LPDDR5 3,200MHz 통합 메모리(메모리 대역폭: 204.8GB/s) <b>[16GB / 24GB 옵션]</b>
+  <br><b>내장 엔진</b>: 하드웨어 가속형 H.264 / HEVC / ProRes / ProRes RAW 동영상 인코딩 및 디코딩엔진, ProRes 인코딩 및 디코딩 엔진, 디스플레이 엔진 
+  <br><b>명령어셋</b>: ARMv8.6-A
+  <br><b>생산공정</b>: TSMC 5nm FinFET P(EUV) (다이사이즈: 289mm^2 / 트랜지스터 개수: 400억)
+  <br><b>주요 사용기기</b>: MacBook Pro 14(2023), MacBook Pro 16(2023), Mac mini(2023)
+</div>
+Apple M2의 강화버전으로, Mac mini(2023)와 함꼐 공개되었다. 
+<p>
+  CPU는 ARM big.LITTLE 기술을 채용하였다. M2와 동일한 Apple Avalanche를 8코어로, Apple Blizzard를 4코어로 구성하여 총 12코어 CPU의 구성을 이룬다. 컷칩 버전으로는 빅 코어가 2개 죽은 10코어 구성이 있다.
+
+  <p>GPU는 M2와 동일한 자체 디자인 5세대 아키텍처를 19코어 구성으로 탑재했다. 컷칩 버전으로는 16코어 구성이 있다.</p>
+
+  <p>NPU는 M2와 동일하게 5세대 Apple Neural Engine을 16코어 구성으로 탑재했다. 성능은 15.8 TOPS로 전작인 M1 Pro 대비 43.6% 향상되었다.</p>
+</p>
+<p>
+  전작인 M1 Pro가 M1 Max와 동일한 128비트 규격 메모리를 2채널 구성으로 탑재한 것과 달리, 64비트 4채널 메모리 구성으로 바뀌었다. 공개된 칩의 사진을 보면 양 옆의 메모리 크기가 더 작아진 것을 확인할 수 있다. 이에 대해서 'SemiAnalysis'의 
+  Dylan Patel은 Apple이 ABF 보드 공급 부족 문제로, 배선 복잡도를 줄여 보드 레이어를 축소시키기 위해 더 작은 64비트 모듈로 변경한 것이라는 분석을 내놓았다. 메모리 속도나 성능 자체는 전작과 동일하다.
+</p>
+<p>
+  이외에 ISP와 ProRes 인코딩/디코딩 엔진을 포함한 미디어 엔진, 디스플레이 엔진 등의 부가 요소를 탑재했으며, PCIe 4.0, Thunderbolt 4 등의 I/O 규격을 지원한다. 그리고 최대 2대의 디스플레이를 지원한다.
+
+</p>
+
+<div id="modelname">
+  <h3><u>Apple M2 Max</u></h3>
+  </div>
+<img src="M2Max.jpg" width="500">
+<div id="boxcontents2">
+  <b>CPU</b>: Apple Avalanche 8코어 3.667GHz + Apple Blizzard 4코어 2.42GHz 
+  <br>(Avalanche: 192KB L1 Order Cache + 128KB L1 data Cache / 32MB L2 share Cache, 
+<br>Blizzard: 128KB L1 Order Cache + 64KB L1 data Cache / 4MB L2 share Cache / 48MB system Cache) 
+  <br><b>GPU</b>: 5세대 자체 디자인 아키텍처 1,398MHz<b> [30코어 / 38코어 옵션]</b>
+  <br><b>NPU</b>: 16코어 5세대 Apple Neural Engine 15.8TOPS
+  <br><b>메모리</b>: 128bit 4채널(=512bit) LPDDR5 3,200MHz 통합 메모리(메모리 대역폭: 409.6GB/s) <b>[32GB / 64GB / 96GB 옵션]</b>
+  <br><b>내장 엔진</b>: 하드웨어 가속형 H.264 / HEVC / ProRes / ProRes RAW 동영상 인코딩엔진 2개 및 동영상 디코딩엔진 , ProRes 인코딩 및 디코딩 엔진 2개, 디스플레이 엔진 
+  <br><b>명령어셋</b>: ARMv8.6-A
+  <br><b>생산공정</b>: TSMC 5nm FinFET P(EUV) (다이사이즈: ~550mm^2 / 트랜지스터 개수: 670억)
+  <br><b>주요 사용기기</b>: MacBook Pro 14(2023), MacBook Pro 16(2023), Mac Studio(2023)
+</div>
+Apple M2의 강화버전으로, 2023년에 출시한 MacBook Pro 14 / 16(2023)와 함꼐 공개되었다. 
+<p>
+CPU는 ARM big.LITTLE 기술을 채용하고, M2와 동일한 Apple Avalanche를 8코어로, Apple Blizzard를 4코어로 구성하여 총 12코어 CPU의 구성을 이룬다. 고전력 모드는 2021년형과 마찬가지로 MacBook Pro 16에서만 사용 가능하다. MacBook Pro 16 모델 기준 M1 Max와 비교해 그래픽, CPU 양쪽에서 20%의 벤치마크 성능 향상이 있으나 최대 전력 소비량 또한 소폭 올랐다. 실성능은 하드웨어 가속과 연계되기 때문에 앱마다 성능 격차는 들쭉날쭉하다. 리틀 코어의 전성비가 좋아진 덕분에 가벼운 작업 시 M1 Max 대비 사용 시간이 소폭 늘어났다.
+</p>
+<p>
+  GPU는 M2와 동일한 자체 디자인 5세대 아키텍처를 38코어 구성으로 탑재했다. 컷칩 버전으로는 30코어 구성이 있다.
+
+ <p>NPU는 M2와 동일하게 5세대 Apple Neural Engine을 16코어 구성으로 탑재했다. 성능은 15.8 TOPS로 전작인 M1 Max 대비 43.6% 향상되었다.</p>
+
+<p>RAM은 전작과 동일한 409.6 GB/s대역폭의 LPDDR5 규격을 사용한다. 128비트 모듈을 4채널 구성으로 탑재하였으며, 64GB와 96GB 옵션을 제공한다. 단, 96GB 옵션은 38코어 GPU 구성을 선택해야만 사용할 수 있다.</p>
+</p>
+<p>
+  이외에 ISP와 ProRes 인코딩/디코딩 엔진을 포함한 미디어 엔진, 디스플레이 엔진 등의 부가 요소를 탑재했으며, PCIe 4.0, Thunderbolt 4 등의 I/O 규격을 지원한다.
+  최대 5대의 디스플레이를 지원한다.
+</p>
+
+<div id="modelname">
+  <h3><u>Apple M2 Ultra</u></h3>
+  </div>
+<img src="M2Ultra.jpg" width="400">
+<div id="boxcontents2">
+  <b>CPU</b>: Apple Avalanche 16코어 3.667GHz + Apple Blizzard 8코어 2.42GHz 
+  <br>(Avalanche: 192KB L1 Order Cache + 128KB L1 data Cache / 64MB L2 share Cache, 
+<br>Blizzard: 128KB L1 Order Cache + 64KB L1 data Cache / 8MB L2 share Cache / 96MB system Cache) 
+  <br><b>GPU</b>: 5세대 자체 디자인 아키텍처 1,398MHz<b> [60코어 / 76코어 옵션]</b>
+  <br><b>NPU</b>: 32코어 5세대 Apple Neural Engine 31.6TOPS
+  <br><b>메모리</b>: 128bit 8채널(=1024bit) LPDDR5 3,200MHz 통합 메모리(메모리 대역폭: 819.2GB/s) <b>[64GB / 128GB / 192GB 옵션]</b>
+  <br><b>내장 엔진</b>: 하드웨어 가속형 H.264 / HEVC / ProRes / ProRes RAW 동영상 인코딩엔진 4개 및 동영상 디코딩엔진 2개 , ProRes 인코딩 및 디코딩 엔진 4개, 디스플레이 엔진 
+  <br><b>명령어셋</b>: ARMv8.6-A
+  <br><b>생산공정</b>: TSMC 5nm FinFET P(EUV) (다이사이즈: ~1,100mm^2 / 트랜지스터 개수: 1340억)
+  <br><b>주요 사용기기</b>: Mac Pro(2023), Mac Studio(2023)
+</div>
+M2 Max의 확장버전으로, 2023 6월 5일에 진행한 WWDC23에서 공개되었다. 
+<p>
+  Apple M1 Ultra에서 처음 선보였던 'UltraFusion'기술을 사용하였다. Apple M2 Max 다이 두 개를 이어붙인 것으로, 총 24코어 구성을 이루었다. 체급과 전성비를 고려했을 때 Intel i9-13900K 정도에 준하는 성능을 낸다.
+</p>
+<p>
+  GPU는 M2 Max와 동일한 자체 디자인 5세대 아키텍처를 76코어 구성으로 탑재했다. 컷칩 버전으로는 60코어 구성이 있다. Metal 벤치마크 기준, 2019년형 Mac Pro의 최고급 그래픽 카드 옵션이었던 AMD Radeon Pro W6900X 대비 살짝 높은 점수를 얻었다.
+
+  <p>NPU는 M2 Max와 동일한 5세대 Apple Neural Engine을 32코어 구성으로 탑재했다. 성능은 31.6 TOPS로 M2 Max의 두 배이다.</p>
+  
+  <p>RAM은 전작과 동일한 819.2 GB/s 대역폭의 LPDDR5 규격을 사용한다. 128비트 모듈을 8채널 구성으로 탑재하였으며 64 GB, 128 GB, 그리고 192 GB 옵션을 제공한다.</p>
+</p>
+<p>
+  이외에 ISP와 ProRes 인코딩/디코딩 엔진을 포함한 미디어 엔진, 디스플레이 엔진 등의 부가 요소를 탑재했으며, PCIe 4.0, Thunderbolt 4 등의 I/O 규격을 지원한다. 그리고 최대 8대의 디스플레이를 지원한다.
+
+</p>
+
+
+<div id="modelname">
+  <h3><u>Apple M3</u></h3>
+  </div>
+<img src="M3.jpg" width="500">
+<div id="boxcontents2">
+  <b>CPU</b>: Apple P(성능) 4코어 3.60/4.05GHz + Apple E(효율) 4코어 2.48/2.57GHz 
+  <br>(P: 192KB L1 Order Cache + 128KB L1 data Cache / 16MB L2 share Cache, 
+<br>E: 128KB L1 Order Cache + 64KB L1 data Cache / 4MB L2 share Cache / 8MB system Cache) 
+  <br><b>GPU</b>: 6세대 자체 디자인 아키텍처 1,380MHz<b> [8코어 / 10코어 옵션]</b>
+  <br><b>NPU</b>: 16코어 6세대 Apple Neural Engine 18TOPS
+  <br><b>메모리</b>: 64bit 2채널(=128bit) LPDDR5 3,200MHz 통합 메모리(메모리 대역폭: 102.4GB/s) <b>[8GB / 16GB / 24GB 옵션]</b>
+  <br><b>내장 엔진</b>: 하드웨어 가속형 H.264 / HEVC / ProRes / ProRes RAW 동영상 인코딩 및 디코딩엔진, ProRes 인코딩 및 디코딩 엔진, AV1디코더
+  <br><b>명령어셋</b>: ARMv8.6-A
+  <br><b>생산공정</b>: TSMC 3nm FinFET B(EUV) (다이사이즈: 146mm^2 / 트랜지스터 개수: 250억)
+  <br><b>주요 사용기기</b>: iMac 24(2023), MacBook Pro 14(2023.11)
+</div>
+Apple M2의 후속작으로, <a href="https://www.youtube.com/live/ctkW3V0Mh-k?si=JLzz14GH7JlVDLry&t=230" target="_blank" title="Apple 이벤트 - 10월 31일"><u>2023년 10월 31일에 진행한 Apple 이벤트</u></a>에서
+공개되었다.
+<p>
+  CPU는 ARM big.LITTLE 기술을 채용하고, A17 Pro에서 사용된 불명의 성능코어 4개와 불명의 효율코어 4개를 합쳐 총 8코어 구성을 이룬다. Apple의 발표에 따르면 M2 대비 성능 코어는 15%, 효율 코어는 30% 더 빠르다고 한다.
+</p>
+<p>
+  GPU는 6세대 자체 디자인 아키텍처를 10코어 구성으로 탑재했다. 함께 공개된 MacBook Pro 14(2023.11)는 10코어 풀칩이 탑재되며, 기본형 iMac 24(2023)에는 8코어 버전 컷칩이 탑재된다. 하드웨어 메시 셰이딩과 레이 트레이싱 가속 지원이 추가되었으며, 'Dynamic Caching'을 새롭게 선보였다. 이는 하드웨어가 메모리에 각 작업당 정확히 필요한 용량만을 능동적으로 할당하며, 낭비를 줄여 메모리를 더 효율적으로 활용할 수 있게 돕는다. 개발자 또한 이 기술을 자유롭게 활용할 수 있다. Apple의 발표에 따르면 Apple M2 시리즈보다 렌더링 성능이 1.8배 향상되었다고 한다. 
+
+  <p>NPU는 6세대 Neural Engine을 16코어 구성으로 탑재했다. 18 TOPS의 성능을 낸다.</p>
+
+  <p>RAM은 전작과 동일한 102.4 GB/s 대역폭의 LPDDR5 규격으로, 8 GB와 16 GB 그리고 24 GB 옵션을 제공한다.</p>
+</p>
+<p>
+  Geekbench 6 벤치마크 결과가 공개되었다. 싱글코어 점수는 3,095점, 멀티코어 점수는 11,724점이다. 전작 M2의 싱글코어 점수는 약 2,600점, 멀티코어 점수는 약 9,700점인 것을 고려하면 Apple의 주장대로 약 20% 향상되었다.
+  그리고 최대 2대의 디스플레이를 지원한다.
+</p>
+
+<div id="modelname">
+  <h3><u>Apple M3 Pro</u></h3>
+  </div>
+<img src="M3pro.jpg" width="500">
+<div id="boxcontents2">
+  <b>CPU</b>: Apple P(성능) 4코어 3.60/4.05GHz + Apple E(효율) 4코어 2.48/2.57GHz 
+  <br>(P: 192KB L1 Order Cache + 128KB L1 data Cache / 16MB L2 share Cache, 
+  <br>E: 128KB L1 Order Cache + 64KB L1 data Cache / 4MB L2 share Cache / 12MB system Cache) <b>[5+6코어 / 6+6코어 옵션]</b>
+  <br><b>GPU</b>: 6세대 자체 디자인 아키텍처 1,380MHz<b>[14코어 / 18코어 옵션]</b>
+  <br><b>NPU</b>: 16코어 6세대 Apple Neural Engine 18TOPS
+  <br><b>메모리</b>: 64bit 3채널(=192bit) LPDDR5 3,200MHz 통합 메모리(메모리 대역폭: 153.6GB/s) <b>[16GB / 36GB 옵션]</b>
+  <br><b>내장 엔진</b>: 하드웨어 가속형 H.264 / HEVC / ProRes / ProRes RAW 동영상 인코딩 및 디코딩엔진, ProRes 인코딩 및 디코딩 엔진, AV1디코더, 디스플레이 엔진
+  <br><b>명령어셋</b>: ARMv8.6-A
+  <br><b>생산공정</b>: TSMC 3nm FinFET B(EUV) (다이사이즈: ? mm^2 / 트랜지스터 개수: 370억)
+  <br><b>주요 사용기기</b>: MacBook Pro 14(2023.11), MacBook Pro 16(2023.11)
+</div>
+Apple M3의 강화버전으로, Apple M3와 동시에 공개되었다.
+<p>
+  CPU는 ARM big.LITTLE 기술을 채용하고, M3와 동일한 불명의 성능코어 6개와 불명의 효율코어 6개를 합쳐 총 12코어 구성을 이룬다. 컷칩 버전은 성능 코어 5개, 효율 코어 6개로 총 11코어 구성을 이루는데, 전작 대비 성능 코어는 줄고 효율 코어가 늘어난 구성이다. Apple의 발표에 따르면, 12코어 기준 M1 Pro 대비 최대 20% 빨라졌다고 한다.
+</p>
+<p>
+  GPU는 6세대 자체 디자인 아키텍처를 18코어 구성으로 탑재했다. 컷칩 버전에는 14코어 구성으로 탑재된다. 이는 전작의 16/19코어 구성 대비 줄어든 것이다. 이 또한 하드웨어 메시 셰이딩과 레이 트레이싱 가속 지원이 추가되었으며, 'Dynamic Caching'을 새롭게 지원한다. 개발자 또한 이 기술을 자유롭게 활용할 수 있다. Apple의 발표에 따르면, 18코어 기준 M2 Pro 대비 최대 10% 더 빠르다.
+
+  <p>NPU는 6세대 Neural Engine을 16코어 구성으로 탑재했다. 18 TOPS의 성능을 낸다.</p>
+
+  <p>RAM은 153.6 GB/s 대역폭의 LPDDR5 규격이다. 공개된 칩의 사진을 보면 64비트 메모리 모듈이 3개 존재하는데, 전작의 4개에서 모듈 하나가 빠졌다. 이 영향으로 전작 대비 대역폭이 25% 감소하였다. 대신 용량 자체는 증가하여 18GB와 36GB 
+    옵션을 제공한다.</p>
+</p>
+<p>
+  M3 시리즈의 라인업들이 모두 상당한 체급 향상을 받은것과 반대로 오히려 유일하게 다운그레이드당하여 코어 구성, 메모리 모듈의 체급, 트랜지스터 개수 등을 고려했을 때 Apple M1과 Apple M2 계열보다 Max와의 간극이 더욱 커졌다.
+</p>
+
+
+
+
+
+
+
+
+
+
+<div id="modelname">
+  <h3><u>Apple M3 Max</u></h3>
+  </div>
+<img src="M3Max.jpg" width="500">
+<div id="boxcontents2">
+  <b>CPU</b>: Apple P(성능) 4코어 3.60/4.05GHz + Apple E(효율) 4코어 2.48/2.57GHz 
+  <br>(P: 192KB L1 Order Cache + 128KB L1 data Cache / 32MB L2 share Cache, 
+<br>E: 128KB L1 Order Cache + 64KB L1 data Cache / 4MB L2 share Cache / 48MB system Cache) <b>[10+4코어 / 12+4코어 옵션]</b>
+  <br><b>GPU</b>: 6세대 자체 디자인 아키텍처 1,380MHz<b>[30코어 / 40코어 옵션]</b>
+  <br><b>NPU</b>: 16코어 6세대 Apple Neural Engine 18TOPS
+  <br><b>메모리</b>: <p>[1] 128bit 3채널(=384bit) LPDDR5 3,200MHz 통합 메모리(<b>10+4코어 CPU, 30코어 GPU옵션에 해당</b>: 36GB, 96GB-메모리 대역폭: 307.2GB/s)
+                  <br>[2] 128bit 4채널(=512bit) LPDDR5 3,200MHz 통합메모리(<b>12코어+4코어 CPU, 40코어 GPU옵션에 해당</b>: 48GB, 64GB, 128GB-메모리 대역폭: 409.6GB/s)</b></p>
+  <br><b>내장 엔진</b>: 하드웨어 가속형 H.264 / HEVC / ProRes / ProRes RAW 동영상 인코딩 엔진 2개 및 동영상 디코딩엔진, ProRes 인코딩 및 디코딩 엔진 2개, AV1디코더, 디스플레이 엔진
+  <br><b>명령어셋</b>: ARMv8.6-A
+  <br><b>생산공정</b>: TSMC 3nm FinFET B(EUV) (다이사이즈: ? mm^2 / 트랜지스터 개수: 920억)
+  <br><b>주요 사용기기</b>: MacBook Pro 14(2023.11), MacBook Pro 16(2023.11)
+</div>
+Apple M3의 강화버전으로, Apple M3와 동시에 공개되었다. TSMC의 3nm공정 수율문제로, Apple M2시리즈까지 적용되었던 UltraFusion은 적용되지 않았다. 
+<p>
+  CPU는 ARM big.LITTLE 기술을 채용하고, M3와 동일한 불명의 성능코어 12개와 불명의 효율코어 4개를 합쳐 총 16코어 구성을 이룬다. 컷칩 버전은 성능 코어 10개, 효율 코어 4개를 합쳐 총 14코어 구성을 이룬다. Apple의 발표에 따르면, 16코어 기준 전작 M2 Max 대비 최대 50% 빨라져 상당한 진전을 이루었다.
+</p>
+<p>
+  GPU는 6세대 자체 디자인 아키텍처를 40코어 구성으로 탑재했다. 컷칩 버전에는 30코어 구성으로 탑재된다. 또한 하드웨어 메시 셰이딩과 레이 트레이싱 가속 지원과 Dynamic Caching을 지원한다. Apple의 발표에 따르면 전작인 M2 Max 대비 최대 20% 빨라졌다고 한다.
+
+  <p>NPU는 6세대 Neural Engine을 16코어 구성으로 탑재했다. 18 TOPS의 성능을 낸다.</p>
+
+  <p>RAM은 전작과 동일한 LPDDR5 규격을 사용하지만, 용량 옵션 증가와 함께 대역폭 구성이 이원화되었다. 먼저 36 GB와 96 GB 옵션은 307.2 GB/s 대역폭을 지원하며, 30코어 GPU 구성에서만 선택할 수 있다. 다음으로 48 GB와 96 GB 그리고 128 GB 옵션은 409.6 GB/s 대역폭을 지원한다. 또한, 40코어 GPU 구성에서만 선택할 수 있다.</p>
+</p>
+<p>
+  벤치마크 결과가 공개되었다. Geekbench 6 기준 싱글코어 점수는 3,187점이며 멀티코어 점수는 21,890점이다. 전작 M2 Max 대비 각각 15%, 47% 정도 향상되었다. Cinebench R23 기준으로는 싱글코어 점수가 1,963점이며 멀티코어 점수가 23,272점으로 전작 대비 향상폭은 각각 20%, 57% 정도이다. 또한 Geekbench 6 기준 M2 Ultra와 비교했을 때 싱글코어 점수는 14% 향상되었고, 멀티코어 점수 또한 3% 향상되어 M2 Ultra를 근소한 차이로 앞선다. 또한, Geekbench 6 기준 TDP가 150W인 Intel i9-13900KS와 거의 동급의 점수를 낸다.
+
+</p>
+최대 5대의 디스플레이를 지원한다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+</div>
+</body>
+</html>
